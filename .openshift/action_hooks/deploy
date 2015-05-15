@@ -2,5 +2,9 @@
 
 set -x
 
+export JAVA_HOME=$OPENSHIFT_DATA_DIR/jdk1.7.0_75
+export M2=$OPENSHIFT_DATA_DIR/apache-maven-2.2.1/bin
+export PATH=$JAVA_HOME/bin:$M2:$PATH
+
 cd $OPENSHIFT_REPO_DIR
 mvn -e -s $OPENSHIFT_REPO_DIR/.openshift/settings.xml -q clean package
