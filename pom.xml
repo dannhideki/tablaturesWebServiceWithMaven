@@ -107,7 +107,6 @@
 							</excludes>
 						</filter>
 					</filters>
-					<finalName>uber-${db4o}-${1.0}</finalName>
 				</configuration>
 				<executions>
 					<execution>
@@ -120,10 +119,6 @@
 								<transformer
 									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 									<mainClass>com.project.Server</mainClass>
-								</transformer>
-								<transformer
-									implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
-									<resource>${basedir}/src/main/resources/db/db4o-8.0.160.14822.jar</resource>
 								</transformer>
 							</transformers>
 						</configuration>
