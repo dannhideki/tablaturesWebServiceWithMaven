@@ -11,7 +11,7 @@
 		$(document).ready(function(){
 						
 			//Requisicao para obter o JSON da sua rota RESTful
-			$.getJSON("http://127.0.0.1:4567/tablature/oasis/wonderwall?format=json&jsoncallback=", function(data) {
+			$.getJSON("http://127.0.0.1:8080/tablature/oasis/wonderwall?format=json&jsoncallback=", function(data) {
 				$(".tab").append(data.chords);
 			});
 		});
