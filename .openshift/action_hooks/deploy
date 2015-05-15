@@ -25,4 +25,4 @@ export M2=$OPENSHIFT_DATA_DIR/apache-maven-3.3.1/bin
 export PATH=$JAVA_HOME/bin:$M2:$PATH
 
 cd $OPENSHIFT_REPO_DIR
-mvn -e -s $OPENSHIFT_REPO_DIR/.openshift/settings.xml -q clean install
+mvn -e -s $OPENSHIFT_REPO_DIR/.openshift/settings.xml -q clean package
