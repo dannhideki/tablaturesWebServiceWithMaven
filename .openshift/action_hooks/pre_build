@@ -4,4 +4,6 @@ set -x
 
 cd $OPENSHIFT_REPO_DIR
 
+mvn -v
+
 mvn -s $OPENSHIFT_REPO_DIR.openshift/settings.xml install:install-file --debug -Dfile=app-root/repo/src/main/resources/db/db4o-8.0.160.14822.jar -DgroupId=com.project.db4o -DartifactId=db4o -Dversion=1.0 -Dpackaging=jar
