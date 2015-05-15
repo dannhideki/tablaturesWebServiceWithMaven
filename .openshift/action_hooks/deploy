@@ -10,5 +10,5 @@ export PATH=$JAVA_HOME/bin:$M2:$PATH
 
 cd $OPENSHIFT_REPO_DIR
 
-mvn -e -s $OPENSHIFT_REPO_DIR.openshift/settings.xml -q install:install-file -Dfile=../../app-root/repo/src/main/resources/db/db4o-8.0.160.14822.jar -DgroupId=com.project.db4o -DartifactId=db4o -Dversion=1.0 -Dpackaging=jar
+mvn -e -s $OPENSHIFT_REPO_DIR.openshift/settings.xml -q install:install-file -Dfile=$OPENSHIFT_REPO_DIRsrc/main/resources/db/db4o-8.0.160.14822.jar -DgroupId=com.project.db4o -DartifactId=db4o -Dversion=1.0 -Dpackaging=jar
 mvn -e -s $OPENSHIFT_REPO_DIR.openshift/settings.xml -q clean package
