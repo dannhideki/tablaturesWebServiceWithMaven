@@ -4,4 +4,4 @@ set -x
 
 cd $OPENSHIFT_REPO_DIR
 
-mvn -s $OPENSHIFT_REPO_DIR.openshift/settings.xml org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file --debug -Dfile=../../app-root/repo/db4o-8.0.160.14822.jar -DgroupId=com.project.db4o -DartifactId=db4o -Dversion=1.0 -Dpackaging=jar
+mvn -s $OPENSHIFT_REPO_DIR.openshift/settings.xml org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file --debug -Dfile=../../app-root/tablaturesWebService/db4o-8.0.160.14822.jar -DgroupId=com.project.db4o -DartifactId=db4o -Dversion=1.0 -Dpackaging=jar
